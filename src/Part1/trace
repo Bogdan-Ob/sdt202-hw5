@@ -1,0 +1,27 @@
+1. Indices [0, 4, 8, 12] (S, L, T, K)
+2. Indices [1, 5, 9, 13] (H, S, R, S)
+3. Indices [2, 6, 10] (E, O, O)
+4. Indices [3, 7, 11] (L, R, C)
+
+- L - S
+- R - S
+- C - R - L
+- K - T - S - L
+
+K   H	E	C	L	R	O	L	S	S	O	R	T	S
+
+-----
+
+- i = 1 (H): shifts K
+- i = 2 (E): shifts K, H
+- i = 3 (C): shifts K, H, E
+- i = 4 (L): in place
+- i = 5 (R): in place
+- i = 6 (O): shifts R
+- i = 7 (L): shifts R, O
+- i = 8 (S): in place
+- i = 9 (S): in place
+- i = 10 (O): shifts S, S, R
+- i = 11 (R): shifts S, S
+
+C   E   H   K   L   L   O   O   R   R   S   S   S   T
